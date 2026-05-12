@@ -1,0 +1,22 @@
+POST http://localhost:8080/incidentes
+Content-Type: application/json
+
+{
+  "descripcion": "Daño en aire acondicionado",
+  "oficina": "OF001",
+  "claseAviso": "Locativo",
+  "prioridad": "Alta"
+}
+
+###
+POST http://localhost:8080/incidentes
+Content-Type: application/json
+
+{
+  "descripcion": "Daño nuevamente en aire acondicionado",
+  "oficina": "OF001",
+  "claseAviso": "Locativo",
+  "prioridad": "Media",
+  "estado": "Pendiente",
+  "incidentePadreId": 1
+}
